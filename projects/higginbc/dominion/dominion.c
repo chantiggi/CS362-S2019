@@ -758,7 +758,7 @@ int salvagerEffect(struct gameState* state, int handPos, int choice1)
 	//+1 buy
       	state->numBuys++;
 			
-      	if (choice1)
+      	if (choice1 != 0)
 	{
 		//gain coins equal to trashed card
 		state->coins = state->coins + getCost( handCard(choice1, state) );
